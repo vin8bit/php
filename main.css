@@ -1,0 +1,73 @@
+
+
+
+.logo a{
+	margin: 0 0 0 40px;
+	font-size: 26px;
+	line-height: 70px;
+	width: 50px;
+	float: left;
+	
+}
+.header{
+	border-bottom: 1px solid #EAEAEB;
+	text-align: right;
+	height: 70px;
+	line-height: 70px;
+}
+.header-right{
+	
+	margin:0 30px 0 0;
+}
+.header-right a{
+	clear: right;
+	text-decoration: none;
+	color: gray;
+	margin: 0 10px;
+	line-height: 70px;
+}
+
+label {
+	margin: 0 40px 0 0;
+	font-size: 26px;
+	line-height: 70px;
+	display: none;
+	width: 26px;
+	float: right;
+	z-index: 10;
+}
+ #toggle {
+	display: none;
+}
+
+@media screen and (max-width: 500px){
+	.nav001 { z-index: 99 !important; }
+	
+     label{
+		 display: block;
+		 cursor: pointer;
+		 
+	 }
+     .header-right{
+		 text-align: center;
+		 width: 100%;
+		 display: none;
+		
+		
+	 }
+	 .header-right a {
+		 display: block;
+		 border-bottom: 1px solid #EAEAEB;
+		 margin: 0;
+		 
+	 }
+	 #toggle:checked + .header-right {
+		 display: block;
+		 
+	 }
+	
+}
+
+
+
+

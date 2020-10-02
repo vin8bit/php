@@ -1,0 +1,14 @@
+body {
+	background-color: #e2e0e0;
+}
+.slider1{
+	padding-top: 55px;
+	}
+.produtc1{
+	text-align: center;
+}
+@media screen and (max-width: 720px) {
+	.slider1{
+	padding-top: 55px;
+	}
+}

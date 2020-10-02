@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+.cardmenu {
+	margin-right: 40px;
+    margin-top: 20px;
+    color: #f2f2f2;
+	font-weight:bold;
+	
+	}
+.cardmenu a {
+	color:rgb(255, 255, 255);
+	}
+.cardmenu span {
+	font-size: 12px;
+    line-height: 14px;
+    background: rgb(253, 127, 0);
+    padding: 2px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+	}
+nav{
+	
+    position: fixed;
+    z-index: 10;
+    height: 60px;
+    width: 100%;
+    background: linear-gradient(to right, #f2709c, #ff9472);
+}
+
+.header{
+    height: 60px;
+    max-width: 100%;
+    color: rgb(253, 253, 253);
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-div{
+    height: 100%;
+    width: 180px;
+    margin-left: 100px;
+    margin-top: 15px;
+    justify-content: flex-start;
+}
+
+.logo-div a{
+    font-size: 26px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.header-menu{
+	
+	margin-left: 30%;
+}
+.header-menu ul{
+    display: flex;
+    float: left;
+    margin-right: -20px;
+}
+
+.header-menu ul li{
+    padding: 10px;
+    margin: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+
+/* Header Responsive css */
+.toggle-btn{
+    width: 35px;
+    height: 35px;
+    float: right;
+    font-size: 25px;
+    margin: -50px 20px 0 0;
+    cursor: pointer;
+    display: none;
+}
+
+.r-menu{
+    transform: translateY(-200%);
+    transition: 0.5s;
+}
+
+.r-menu ul a li{
+    border-bottom: 1px solid #fff;
+    padding: 15px;
+    text-align: center;
+    font: bold 18px arial;
+    background: linear-gradient(to right, #f2709c, #ff9472);
+    color: #fff;
+}
+
+#nav-chk:checked ~ .r-menu{
+    transform: translate(0%)
+}
+
+#nav-chk{
+    display: none;
+}
+
+/* Responsive Header */
+@media screen and (max-width: 720px) {
+    .toggle-btn{
+		 margin-right: 60px;
+        display: block;
+    }
+    .header-menu{
+        display: none;
+    }  
+.logo-div{
+    margin-left: 30px;
+}	}
+    
+/* Slider */
+/* Slideshow container */
+.slideshow-container {
+    max-width: 100%;
+    height: 500px;
+    margin: auto;
+    z-index: 2;
+    overflow: hidden;
+}
+
+/* Hide the images by default */
+
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 35px;
+    padding: 8px 12px;
+    position: absolute;
+    line-height: 500px;
+    left: 250px;
+    font-weight: bold;
+    width: 100%;
+}
+@media (max-width:768px)
+{
+    
+.slideshow-container {
+    height: 120px;
+}
+
+}

@@ -1,0 +1,117 @@
+
+.productdiv{
+    position: relative;
+    top:-25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #f2709c,#ff9472);
+}
+.productcontainer
+{
+    position: relative;
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+.productcontainer .card
+{
+    position: relative;
+    max-width: 300px;
+    height: 300px;
+    background: #fff;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+.productcontainer .card:hover
+{
+    height: 420px;
+}
+.productcontainer .card .imgBx
+{
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top: -60px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+.productcontainer .card .imgBx img
+{
+    max-width: 100%;
+    border-radius: 4px;
+
+}
+.productcontainer .card .content
+{
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s ease-in-out;
+}
+.productcontainer .card:hover .content
+{
+    visibility: visible;
+    opacity: 1;    
+    margin-top: -40px;
+    transition-delay: .3s;
+}
+.productcontainer .card .button 
+{
+    position: relative;
+    margin:0;
+    padding: 0;
+    bottom: 20px;
+    height: 50px;
+    width: 100px;
+    background: #ff748c;
+    color: #fff;
+    font-weight: bold;
+    font-size: large;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 10%;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+.productcontainer .card:hover .button 
+{
+    bottom: 0;
+    transition-delay: .3s;
+}
+
+.productcontainer .card .button .buy
+{
+    position: relative;
+    margin:0;
+    padding: 0;
+    height: 50px;
+    width: 100px;
+    background: #ff748c;
+    color: #fff;
+    font-weight: bold;
+    font-size: large;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 10%;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+.productcontainer .card:hover .button .buy
+{
+    bottom: 0;
+    transition-delay: .3s;
+}
